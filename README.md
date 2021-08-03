@@ -34,6 +34,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 
 		- Filebeat monitors log files  
 - What does Metricbeat record?
+
 		- It records metrics and statistics data 
 
 The configuration details of each machine may be found below.
@@ -51,11 +52,13 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the Jump-Box-Provisioner machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- Add whitelisted IP addresses_
+- Add whitelisted IP addresses
+
 		- 20.85.216.26
 		
 Machines within the network can only be accessed by Jump-Box-Provisioner.
-- Which machine did you allow to access your ELK VM? What was its IP address?_
+- Which machine did you allow to access your ELK VM? What was its IP address?
+
 		- Jump-Box-Provisioner
 		- 10.1.0.5 (Private IP address for the Elk VM)
 A summary of the access policies in place can be found in the table below.
@@ -70,11 +73,13 @@ A summary of the access policies in place can be found in the table below.
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- What is the main advantage of automating configuration with Ansible?_
+- What is the main advantage of automating configuration with Ansible?
+
 		- Using the YAML playbooks which is use to automate the configuration of multiple servers.
 
 The playbook implements the following tasks:
-- In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
+- In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc.
+
 		- Ssh into the Jump-Box-Provisioner.
 		- Start and attach the docker which has ansible.
 		- Navigate into /etc/ansible and create the ELK installation playbook.
@@ -87,16 +92,19 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- List the IP addresses of the machines you are monitoring_
+- List the IP addresses of the machines you are monitoring
+
 		- Web 1 (40.87.26.156/10.0.0.7)
 		- Web 2 (40.87.26.156/10.0.0.6)
 
 We have installed the following Beats on these machines:
-- Specify which Beats you successfully installed_
+- Specify which Beats you successfully installed
+
 		- Filebeat and metricbeat 
 
 These Beats allow us to collect the following information from each machine:
-- In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
+- In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc.
+
 		- Filebeat collect log files 
 				- An example of filebeat logs from apache
 		- Metricbeat collect the metrics and statistics of the servers	
