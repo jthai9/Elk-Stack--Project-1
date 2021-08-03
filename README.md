@@ -106,19 +106,22 @@ These Beats allow us to collect the following information from each machine:
 - In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc.
 
 		- Filebeat collect log files 
-				- An example of filebeat logs from apache
+			- An example of filebeat logs from apache
 		- Metricbeat collect the metrics and statistics of the servers	
-				- An example of metricbeat is CPU usage.
+			- An example of metricbeat is CPU usage.
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the filebeat-config.yml file to /etc/ansible/roles/files.
+- Copy the filebeat-config.yml file to:
+
+	- /etc/ansible/roles/files.
+	
 - Update the filebeat-config.yml file to include Elk server private IP in the appate lines 
 - Run the playbook, and navigate to http://20.97.216.245:5601/app/kibana#/home to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
+Answer the following questions to fill in the blanks:_
 - Which file is the playbook? filebeat-playbook.yml
 - Where do you copy it? /etc/ansible/roles
 - Which file do you update to make Ansible run the playbook on a specific machine? hosts file
