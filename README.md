@@ -4,7 +4,7 @@ Elk Project
 
 The files in this repository were used to configure the network depicted below.
 
-		- https://github.com/jthai9/Elk-Stack--Project-1/blob/9ad4f131a4e750c7fa558cab1def61f677c1ac47/Diagrams/Project%201%20Diagram.PNG
+		- Diagrams/Diagram 2.PNG
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
 
