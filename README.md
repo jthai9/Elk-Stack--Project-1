@@ -30,9 +30,10 @@ Load balancing ensures that the application will be highly functional, in additi
 		- A jump box is a secure computer that is used to launch any administrative task or use as a point to connect to other servers or untrusted environments.
 		
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the network and system logs.
-- What does Filebeat watch for?_
+- What does Filebeat watch for?
+
 		- Filebeat monitors log files  
-- What does Metricbeat record?_
+- What does Metricbeat record?
 		- It records metrics and statistics data 
 
 The configuration details of each machine may be found below.
